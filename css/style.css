@@ -1,57 +1,37 @@
-*, *:after, *:before{
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-}
-body{
-    margin: 0;
-}
-
-html, body{
-    min-height: 100vh;
-}
-.flexible {
-    position:absolute;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    z-index: -999;
-    top: 0;
-    left: 0;
-}
-
-.myClass {
+html,
+body {
     overflow: hidden;
-    color: #eee;
-    padding: 3em;
+    height: 100vh;
+    width: 100vw;
+    color: white;
+    display: grid;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  
+}
+.myContainer{
+    margin-left: 60px;
 }
 
-.myClass ul li {
-    font-family: Arial;
-    font-size: 20pt;
-    line-height: 30pt;
+.videoIcon{
+    height: 100px;
 }
 
-.hidden {
-    display: none;
+.iconGitHub{
+    height: 50px;
 }
 
-.content {
-    color: #eee;
-    font-size: 1.5em;
+h1{
+    font-size:5em;
 }
 
-.bgv-overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    display: block;
-    background-image: none;
-    background-repeat: repeat;
-    z-index: -998;
-}
-
-p {
-    color: #eee;
-}
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    
+  }
