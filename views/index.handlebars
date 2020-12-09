@@ -1,0 +1,26 @@
+<div id="myId" class="myClass">
+    <ul>
+        <li>This is an example of video background</li>
+        <li>Playlist is supported</li>
+        <li>Video is cached in the background</li>
+        <li>You can put any content over the top of the video</li>
+    </ul>
+    <!--
+    <img src="/images/github.svg">
+    -->
+</div>
+<script>
+    new BackgroundVideo({
+    video: [
+        {
+            file: "/video/ID_3864190.mp4",
+            formats: ["webm", "ogv"]
+        },
+        {
+            file: "/video/ID_3864190.mp4"
+        }
+    ],
+    mobileImg: "img/Hello-World.jpg",
+    overlay: "img/dots1.png"
+});
+</script>
